@@ -1,0 +1,59 @@
+.hero {
+
+}
+
+.hero-bg {
+  background-image: url(../img/boss-fight-free-high-quality-stock-images-photos-photography-musician-guitar-music.jpg);
+  /*background-image: url(../img/download.jpg);*/
+  height: 79vh;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+.hero-bg::after {
+  content: " ";
+  background-color: #000620;
+	opacity: .5;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  top:0;
+}
+
+.hero hgroup {
+  text-transform: uppercase;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  /*background: pink;*/
+  display: block;
+  text-align: center;
+
+}
+
+h1 {
+  font-weight: 300;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #000620;
+}
+
+h2 {
+  font-size: 5.5em;
+  margin: 0;
+  color: #90EEB2;
+  letter-spacing: 5px;
+  text-shadow: 1px 2px #000620;
+}
