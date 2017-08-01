@@ -20,9 +20,9 @@ class ArtistBox extends Component {
         buttonText= "hide comments";
       }
 
-      let currentSlide = <ArtistOne />;
-      if (this.state.showNextSlide) {
-        currentSlide = <ArtistTwo />;
+      let currentArtist = <ArtistOne />;
+      if (this.state.showArtist) {
+        currentArtist = <ArtistTwo />;
     }
   		return(
   			<div className = "artist-box">
@@ -37,13 +37,15 @@ class ArtistBox extends Component {
 
   				<h3>Comments</h3>
   				<h4> 2 comments</h4>
-          <button onClick = {this._handleClick.bind(this)}>Artist</button>
+          <button onClick = {this._handleClick.bind(this)}>{buttonText}</button>
   				{/*button above that will toggle state on click event*/}
   				<div className = "artist-list">
   					<Artist author = "Prince" body = "McGee's comment goes here!"/>
   					<Artist author = "The Replacements" body = "if you're not into the brevity thing"/>
             <Artist author = "Soul Asylum" body = "if you're not into the brevity thing"/>
   				{/* This is how you comment in JSX*/}
+
+          {currentArtist}
   				</div>
   			</div>
   		);
